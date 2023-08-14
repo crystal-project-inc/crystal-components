@@ -2,7 +2,6 @@ import { FC } from 'react'
 import classNamesBind from 'classnames/bind'
 import ProfileHeader from 'components/ProfileHeader'
 import { Profile } from 'lib/types'
-import ColorIcon from 'components/ColorIcon'
 import SectionHeader from 'components/SectionHeader'
 import css from './styles.module.scss'
 import CircumplexGraph from 'components/CircumplexGraph'
@@ -47,6 +46,24 @@ const ProfileOverview: FC<OwnProps> = ({ profile }: OwnProps) => {
         profile={profile}
         title={'DRAINERS'}
         recommendationsList={profile.content.drainer.phrase}
+        icon="working"
+      />
+      <Recommendations
+        profile={profile}
+        title={'WRITING STYLES'}
+        recommendationsList={profile.content.communication.phrase}
+        icon="working"
+      />
+      <Recommendations
+        profile={profile}
+        title={'SPEAKING TO'}
+        recommendationsList={profile.content.meeting.phrase}
+        icon="working"
+      />
+      <Recommendations
+        profile={profile}
+        title={'SELLING TO'}
+        recommendationsList={profile.content.selling.phrase}
         icon="working"
       />
     </div>
