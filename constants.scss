@@ -1,0 +1,84 @@
+// DISC Colors
+$disc-D: #db3c48;
+$disc-Di: #e5561f;
+$disc-DI: #f48119;
+$disc-Id: #ffb727;
+$disc-I: #f7cf0d;
+$disc-Is: #d3e000;
+$disc-IS: #afd80a;
+$disc-Si: #88c100;
+$disc-S: #11b21b;
+$disc-Sc: #51b48e;
+$disc-SC: #00b6bc;
+$disc-Cs: #007fb6;
+$disc-C: #2f5fa5;
+$disc-Cd: #6756b2;
+$disc-CD: #93359b;
+$disc-Dc: #c62e85;
+
+// Style Guide Colors
+$blue: #2ca7e4;
+$mid-blue: #a2e2fc;
+$baby-blue: #def0f9;
+$white: #ffffff;
+$red: $disc-D;
+$orange: $disc-Id;
+$green: $disc-S;
+$coral: #ff7f56;
+$midnight-blue: #01293d;
+$yellow: $disc-Id;
+
+// Myers Briggs Colors
+$ENFP: $disc-D;
+$ESFJ: $disc-Di;
+$ESFP: $disc-DI;
+$INFP: $disc-Id;
+$INFJ: $disc-I;
+$ISFP: $disc-Is;
+$ISFJ: $disc-IS;
+$INTP: $disc-Si;
+$INTJ: $disc-S;
+$ISTP: $disc-Sc;
+$ISTJ: $disc-SC;
+$ENTP: $disc-Cs;
+$ENTJ: $disc-C;
+$ESTP: $disc-Cd;
+$ESTJ: $disc-CD;
+$ENFJ: $disc-Dc;
+
+// Enneagram Colors
+$enneagram-1: $disc-D;
+$enneagram-2: $disc-DI;
+$enneagram-3: $disc-I;
+$enneagram-4: $disc-IS;
+$enneagram-5: $disc-S;
+$enneagram-6: $disc-SC;
+$enneagram-7: $disc-C;
+$enneagram-8: $disc-CD;
+$enneagram-9: $disc-Dc;
+
+// Material Colors
+$material-87: rgba(0, 0, 0, 0.87);
+$material-54: rgba(0, 0, 0, 0.54);
+$material-38: rgba(0, 0, 0, 0.38);
+$material-34: rgba(0, 0, 0, 0.34);
+$material-24: rgba(0, 0, 0, 0.24);
+$material-12: rgba(0, 0, 0, 0.12);
+$material-08: rgba(0, 0, 0, 0.08);
+$material-04: rgba(0, 0, 0, 0.04);
+
+// Greyscale
+$crystal-background-gray: #f5f5f5;
+$crystal-highlight-gray: #bbbbbb;
+$crystal-line-gray: #e5e5e5;
+$disc-empty: #bdbdbd;
+$gray-background: #e3e3e3;
+$faint-blue: #e5edf3;
+$crystal-midnight-blue: #01293d;
+$action-blue: #1e749f;
+$gray-text: #6c6c6c;
+
+// Sizes
+$sidebar-width: 296px;
+$sidebar-nav-width: 35px;
+$sidebar-content-width: $sidebar-width - $sidebar-nav-width;

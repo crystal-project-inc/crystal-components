@@ -1,0 +1,68 @@
+@import 'constants.scss';
+
+.container {
+  border-radius: 50%;
+  background: $crystal-background-gray;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $material-12;
+    background: $crystal-background-gray;
+    border-radius: 50%;
+    padding: 0 32px;
+    line-height: 2em;
+    &.has-image {
+      background: $material-34;
+      color: #fff;
+    }
+  }
+  .input {
+    display: none;
+  }
+}
+
+@media print {
+  .container {
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .input {
+    display: none;
+  }
+}

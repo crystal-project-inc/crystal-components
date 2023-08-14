@@ -1,0 +1,230 @@
+@import 'constants.scss';
+
+.disc-color {
+  @mixin color-mixin($color) {
+    color: $color;
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}
+
+.disc-background-color {
+  @mixin color-mixin($color) {
+    background-color: $color;
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}
+
+.borderDiscColor {
+  @mixin color-mixin($color) {
+    border-color: $color;
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}
+
+.disc-border-color {
+  @mixin color-mixin($color) {
+    border-color: $color;
+    border-left-color: $color;
+    border-top-color: $color;
+    border-bottom-color: $color;
+    border-right-color: $color;
+  }
+  &.empty {
+    @include color-mixin($blue);
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+  &.blue {
+    @include color-mixin($blue);
+  }
+  &.red {
+    @include color-mixin($red);
+  }
+}

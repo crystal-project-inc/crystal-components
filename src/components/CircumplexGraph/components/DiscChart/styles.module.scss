@@ -1,0 +1,165 @@
+@import 'constants.scss';
+
+.container {
+  width: 100%;
+  display: block;
+  @media print {
+    max-width: 250px;
+  }
+}
+
+.hasBreakdown {
+  .polygon {
+    cursor: pointer;
+  }
+}
+
+.polygon {
+  position: relative;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.54 !important;
+  }
+  &.active {
+    opacity: 0.38;
+  }
+
+  &.roleMain {
+    opacity: 0.84;
+  }
+  &.roleFirst {
+    opacity: 0.6;
+  }
+  &.roleSecond {
+    opacity: 0.4;
+  }
+  &.roleThird {
+    opacity: 0.2;
+  }
+
+  &.roleMain,
+  &.roleFirst,
+  &.roleSecond,
+  &.roleThird {
+    &.d {
+      fill: $red;
+    }
+    &.i {
+      fill: $yellow;
+    }
+    &.s {
+      fill: $green;
+    }
+    &.c {
+      fill: $blue;
+    }
+
+    @mixin color-mixin($color) {
+      fill: $color;
+    }
+    &.D {
+      @include color-mixin($disc-D);
+    }
+    &.Di {
+      @include color-mixin($disc-Di);
+    }
+    &.DI {
+      @include color-mixin($disc-DI);
+    }
+    &.Id {
+      @include color-mixin($disc-Id);
+    }
+    &.I {
+      @include color-mixin($disc-I);
+    }
+    &.Is {
+      @include color-mixin($disc-Is);
+    }
+    &.IS {
+      @include color-mixin($disc-IS);
+    }
+    &.Si {
+      @include color-mixin($disc-Si);
+    }
+    &.S {
+      @include color-mixin($disc-S);
+    }
+    &.Sc {
+      @include color-mixin($disc-Sc);
+    }
+    &.SC {
+      @include color-mixin($disc-SC);
+    }
+    &.Cs {
+      @include color-mixin($disc-Cs);
+    }
+    &.C {
+      @include color-mixin($disc-C);
+    }
+    &.Cd {
+      @include color-mixin($disc-Cd);
+    }
+    &.CD {
+      @include color-mixin($disc-CD);
+    }
+    &.Dc {
+      @include color-mixin($disc-Dc);
+    }
+  }
+}
+
+@mixin fill-mixin($color) {
+  fill: $color !important;
+}
+.fill-D {
+  @include fill-mixin($disc-D);
+}
+.fill-Di {
+  @include fill-mixin($disc-Di);
+}
+.fill-DI {
+  @include fill-mixin($disc-DI);
+}
+.fill-Id {
+  @include fill-mixin($disc-Id);
+}
+.fill-I {
+  @include fill-mixin($disc-I);
+}
+.fill-Is {
+  @include fill-mixin($disc-Is);
+}
+.fill-IS {
+  @include fill-mixin($disc-IS);
+}
+.fill-Si {
+  @include fill-mixin($disc-Si);
+}
+.fill-S {
+  @include fill-mixin($disc-S);
+}
+.fill-Sc {
+  @include fill-mixin($disc-Sc);
+}
+.fill-SC {
+  @include fill-mixin($disc-SC);
+}
+.fill-Cs {
+  @include fill-mixin($disc-Cs);
+}
+.fill-C {
+  @include fill-mixin($disc-C);
+}
+.fill-Cd {
+  @include fill-mixin($disc-Cd);
+}
+.fill-CD {
+  @include fill-mixin($disc-CD);
+}
+.fill-Dc {
+  @include fill-mixin($disc-Dc);
+}
+
+.showCursorAsPointer {
+  cursor: pointer;
+}

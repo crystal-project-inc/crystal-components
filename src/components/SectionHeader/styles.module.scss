@@ -1,0 +1,88 @@
+@import 'constants.scss';
+
+.container {
+  display: flex;
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgba($blue, 0.1);
+
+  &.noMargin {
+    margin-bottom: 0;
+  }
+  @mixin color-mixin($color) {
+    background-color: rgba($color, 0.1);
+    .title {
+      color: $color;
+    }
+  }
+  &.empty {
+    @include color-mixin($blue);
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}
+
+.title {
+  color: $blue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  &.flipIcon {
+    transform: rotate(180deg);
+  }
+}

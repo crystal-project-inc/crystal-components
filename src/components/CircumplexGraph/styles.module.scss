@@ -1,0 +1,368 @@
+@import 'constants.scss';
+@import 'helpers.scss';
+
+.flex {
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-text {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+.chevron {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  opacity: 0.54;
+  transition: all 0.1s;
+  &:hover {
+    opacity: 0.84;
+  }
+}
+
+.dropdown {
+  display: block;
+  background-color: $crystal-background-gray;
+  position: absolute;
+  width: 100%;
+  left: auto;
+  right: auto;
+  top: 100%;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid $material-12;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  padding: 4px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.1s;
+  font-weight: 600;
+  &:hover {
+    background: #fff;
+    text-decoration: underline;
+  }
+}
+
+.container {
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+
+  @media print {
+    max-width: 250px;
+  }
+
+  &.maximized {
+    margin-bottom: 16px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  width: 76%;
+  height: 76%;
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+
+  &:hover .edit-text {
+    display: flex;
+  }
+}
+
+.chart-wrapper {
+  width: 130%;
+  height: 130%;
+  margin-right: -15%;
+  margin-left: -15%;
+  margin-top: -15%;
+  margin-bottom: -15%;
+  @media print {
+    -webkit-region-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+.maximize {
+  width: 24px;
+  height: 24px;
+  opacity: 0.34;
+  margin-left: 16px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    animation: grow 0.5s;
+  }
+
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
+
+.edit-text {
+  display: none;
+  flex-direction: column;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  white-space: pre;
+  width: 67px;
+  height: 67px;
+  justify-content: center;
+  border-radius: 50%;
+  color: $midnight-blue;
+  background: rgba($white, 0.7);
+}
+
+.radar-chart-dot {
+  position: absolute;
+  @media print {
+    max-width: 24px;
+    max-height: 24px;
+    font-size: 14px !important;
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.7);
+  }
+  &.point {
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 50%;
+    border: 1px solid $material-38;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      transition: all 0.1s;
+      z-index: 1000;
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.15);
+      transform: scale(1.2);
+      .summary {
+        display: block;
+      }
+    }
+  }
+  &.a {
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+  }
+  &.b {
+    background-color: #e0e0e0;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+  }
+  &.c {
+    background-color: #9e9e9e;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+  }
+  &.d {
+    background-color: #616161;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -7px;
+  }
+  &.e {
+    background-color: #212121;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+  }
+  @media print {
+    -webkit-print-color-adjust: exact !important;
+    &.a {
+      box-shadow: inset 0 0 0 1000px #fff;
+    }
+    &.b {
+      box-shadow: inset 0 0 0 1000px #e0e0e0;
+    }
+    &.c {
+      box-shadow: inset 0 0 0 1000px #9e9e9e;
+    }
+    &.d {
+      box-shadow: inset 0 0 0 1000px #616161;
+    }
+    &.e {
+      box-shadow: inset 0 0 0 1000px #212121;
+    }
+  }
+}
+
+.summary {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: none;
+  z-index: 1000;
+  background: #fff;
+  padding: 0 12px;
+  min-width: 300px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  p {
+    margin: 8px 0;
+  }
+  @mixin color-mixin($color) {
+    color: $color;
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  @media print {
+    display: none;
+  }
+}
+
+.button {
+  width: 104px;
+  margin: 0 8px;
+  padding: 6px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  transition: all 0.1s;
+  color: $material-54;
+  &:hover {
+    background-color: $crystal-background-gray;
+    color: $material-87;
+  }
+}
+
+.active {
+  background-color: $crystal-background-gray;
+  color: $material-87;
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-traits {
+  position: absolute;
+  width: 225px;
+  bottom: 108%;
+  background: #fff;
+  padding: 8px 12px;
+  border-left: 8px solid $material-54;
+  box-shadow: 0 0 16px $material-08;
+  transition: all 0.1s;
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 20px;
+  @extend .disc-border-color;
+  display: none;
+  &.display {
+    display: block;
+  }
+}
+
+.hover-title {
+  font-size: 16px;
+  @extend .disc-color;
+}

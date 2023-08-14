@@ -1,0 +1,80 @@
+@import 'constants.scss';
+
+.container {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.item {
+  display: inline-block;
+  padding-left: 12px;
+  line-height: 20px;
+  margin-left: 2px;
+  position: relative;
+  color: $material-87;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: -1px;
+    top: 0;
+    background-color: $material-34;
+  }
+  @mixin color-mixin($color) {
+    &:before {
+      background-color: $color;
+    }
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "data": {
+    "first_name": "Drew",
+    "last_name": "D'Agostino",
+    "photo_url": "https://photos.crystalknows.com/62e4eb161bc108cfa8b6e299d09077d7/1664563101/thumb_b967db42c360ed9ce5feb9c7644aee5e.png",
+    "url": "https://www.crystalknows.com/p/62e317a4-7466-42cd-8dc1-6515538db7fe",
+    "verified": true,
+    "qualities": [
+      "Independent",
+      "Persuasive",
+      "Assertive",
+      "Determined",
+      "Decisive"
+    ],
+    "personalities": {
+      "archetype": "Driver",
+      "disc_type": "Di",
+      "disc_intensity": 75,
+      "disc_percentages": {
+        "d": 72,
+        "i": 22,
+        "s": 4,
+        "c": 2
+      },
+      "enneagram_type": "7",
+      "myers_briggs_type": "ENFP"
+    },
+    "images": {
+      "disc_map": "https://api.crystalknows.com/images/disc_map/6.png"
+    },
+    "content": {
+      "profile": {
+        "overview": [
+          "This person tends to be direct, task-focused, fast-paced, and resistant to rigid structures.",
+          "This person is likely to be comfortable with direct communication, taking the lead in groups, and taking calculated risks. ",
+          "This person tends to communicate directly and make decisions independently, sometimes disregarding existing structures or standards.",
+          "This person tends to be enthusiastic and decisive, with a strong preference for autonomy. ",
+          "This person tends to be fast-paced, goal-oriented, direct, persuasive, and may seem overly blunt at times."
+        ]
+      },
+      "behavior": {
+        "phrase": [
+          "Saying something bluntly without details",
+          "Driving others to action",
+          "Speaking up to get everyone back on topic in a meeting",
+          "Feeling anxious about someone else making decisions on their behalf",
+          "Immediately projecting assertiveness and confidence"
+        ]
+      },
+      "motivation": {
+        "phrase": [
+          "Taking charge",
+          "Ambitious goals",
+          "Challenges",
+          "Making quick decisions",
+          "Professional growth"
+        ]
+      },
+      "drainer": {
+        "phrase": [
+          "Keeping their opinion to themselves",
+          "Deep research and analysis",
+          "Slow pace of work",
+          "Failing to achieve goals",
+          "Following inflexible rules"
+        ]
+      },
+      "communication": {
+        "phrase": [
+          "Don't be afraid to disagree",
+          "Keep conversation brief",
+          "Get right to the bottom line",
+          "Avoid being quiet or reserved",
+          "Assert yourself with confidence"
+        ]
+      },
+      "meeting": {
+        "phrase": [
+          "Quickly address the purpose of the meeting",
+          "Prepare for pushback",
+          "Keep it as short as possible",
+          "Make an effort to meet their goals",
+          "Stay on topic"
+        ]
+      },
+      "selling": {
+        "phrase": [
+          "Make an effort to focus the conversation",
+          "Project confidence",
+          "Don't be thrown off by a blunt comment",
+          "Ask about their goals",
+          "Expect them to offer feedback"
+        ]
+      },
+      "working_together": {
+        "phrase": [
+          "Give them a chance to take charge",
+          "Stay focused on the bottom line",
+          "Get used to a fast work pace",
+          "Always focus on the team's overall goal",
+          "Expect them to adapt quickly to change"
+        ]
+      },
+      "recommendations": {
+        "do": [
+          "Use an energetic, assertive tone",
+          "Highlight competitive advantages of your product",
+          "Speak with high energy and answer questions directly"
+        ],
+        "dont": [
+          "Don't be overly friendly; be assertive and push back when you need to",
+          "Don't sugarcoat or use vague, overly-optimistic language to describe the value of your product",
+          "Don't give in-depth product descriptions without explaining bottom-line impact"
+        ]
+      }
+    }
+  }
+}

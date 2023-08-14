@@ -1,0 +1,104 @@
+@import 'constants.scss';
+
+.container {
+  padding: 0 0 25px;
+}
+
+.container h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 18px;
+}
+
+.sectionOverview {
+  margin: 10px 16px 0;
+  line-height: 22px;
+  color: $material-87;
+}
+
+.introPhrase {
+  margin: 20px 16px 12px;
+  font-weight: 600;
+  @mixin color-mixin($color) {
+    color: $color;
+  }
+  &.D {
+    @include color-mixin($disc-D);
+  }
+  &.Di {
+    @include color-mixin($disc-Di);
+  }
+  &.DI {
+    @include color-mixin($disc-DI);
+  }
+  &.Id {
+    @include color-mixin($disc-Id);
+  }
+  &.I {
+    @include color-mixin($disc-I);
+  }
+  &.Is {
+    @include color-mixin($disc-Is);
+  }
+  &.IS {
+    @include color-mixin($disc-IS);
+  }
+  &.Si {
+    @include color-mixin($disc-Si);
+  }
+  &.S {
+    @include color-mixin($disc-S);
+  }
+  &.Sc {
+    @include color-mixin($disc-Sc);
+  }
+  &.SC {
+    @include color-mixin($disc-SC);
+  }
+  &.Cs {
+    @include color-mixin($disc-Cs);
+  }
+  &.C {
+    @include color-mixin($disc-C);
+  }
+  &.Cd {
+    @include color-mixin($disc-Cd);
+  }
+  &.CD {
+    @include color-mixin($disc-CD);
+  }
+  &.Dc {
+    @include color-mixin($disc-Dc);
+  }
+}
+
+.phraseContainer {
+  margin: 12px 16px 0;
+  padding: 0;
+}
+
+.playbook-link {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 16px;
+  font-size: 14px;
+  cursor: pointer;
+
+  img {
+    margin-left: 4px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.expandableContentContainer {
+  margin: 0 16px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.overviewText {
+  color: $material-87;
+}
