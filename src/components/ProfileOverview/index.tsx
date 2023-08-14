@@ -52,13 +52,13 @@ const ProfileOverview: FC<OwnProps> = ({ profile }: OwnProps) => {
         profile={profile}
         title={'WRITING STYLES'}
         recommendationsList={profile.content.communication.phrase}
-        icon="working"
+        icon="mail"
       />
       <Recommendations
         profile={profile}
         title={'SPEAKING TO'}
         recommendationsList={profile.content.meeting.phrase}
-        icon="working"
+        icon="speech_bubble"
       />
       <Recommendations
         profile={profile}

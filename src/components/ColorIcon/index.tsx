@@ -14,6 +14,8 @@ const COLOR_ICON_NAMES = [
   'people',
   'award',
   'working',
+  'speech_bubble',
+  'mail',
 ] as const
 
 export type ColorIconName = (typeof COLOR_ICON_NAMES)[number]
@@ -154,6 +156,27 @@ const ColorIcon: FC<OwnProps> = ({ icon, discType, width }: OwnProps) => {
                 id="Path_2715"
                 data-name="Path 2715"
                 d="M19.92,26.67V5.87a2.6,2.6,0,0,0-2.6-2.6h-5.2a2.59,2.59,0,0,0-2.6,2.6v20.8"
+              />
+            </g>
+          </svg>
+        )
+      case 'speech_bubble':
+        return (
+          <svg {...getBasicClasses('0 0 30 30')}>
+            <path d="M28.72,19.47a3,3,0,0,1-3,3h-18l-6,6v-24a3,3,0,0,1,3-3h21a3,3,0,0,1,3,3Z" />
+          </svg>
+        )
+      case 'mail':
+        return (
+          <svg {...getBasicClasses('0 0 30 30')}>
+            <g>
+              <path
+                data-name="Path 2693"
+                d="M4.42,4.17H26a2.7,2.7,0,0,1,2.7,2.7v16.2a2.7,2.7,0,0,1-2.7,2.7H4.42a2.7,2.7,0,0,1-2.7-2.7V6.87A2.7,2.7,0,0,1,4.42,4.17Z"
+              />
+              <path
+                data-name="Path 2694"
+                d="M28.72,6.87l-13.5,9.45L1.72,6.87"
               />
             </g>
           </svg>

@@ -55,7 +55,7 @@ A styled version of the section header which also receives an icon prop and a te
 
 ### Recommendations
 
-A display for the bulk of the profile data. Which also reveives a title, recommendationList, and optional icon prop.
+A display for the profile content data. Which also receives a title, recommendationList, and optional icon prop.
 
 ```
 <Recommendations
@@ -79,4 +79,4 @@ A Crystal styled circumplex graph with all of the disc types, with the current p
 ### Color Icon
 
 The `SectionHeader` and `Recommendations` components can receive any of the following strings for their icon:
-`'speech_bubble', 'close-bubble', 'checkBubble', 'disc_wheel', 'people', 'award', 'working'`
+`'speech_bubble', 'close-bubble', 'checkBubble', 'disc_wheel', 'people', 'award', 'working', speech_bubble, mail`
