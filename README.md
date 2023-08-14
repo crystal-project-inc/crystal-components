@@ -31,32 +31,52 @@ The components available are:
 ### Profile Overview
 
 A list of all the available components, including a sample of a few recommendations components.
+`<ProfileOverview profile={profile} />`
 
 ### Profile Header
 
 The profile name, photo, and type.
+`<ProfileHeader profile={profile} />`
 
 ### Profile Bullet Points
 
 The profile's disc type and 3 descriptors.
+`<ProfileBulletPoints profile={profile} />`
 
 ### SectionHeader
 
 A styled version of the section header which also receives an icon prop and a text or tsx child.
 
+```
+<SectionHeader icon="disc_wheel" profile={profile}>
+  DISC Map
+</SectionHeader>
+```
+
 ### Recommendations
 
 A display for the bulk of the profile data. Which also reveives a title, recommendationList, and optional icon prop.
 
+```
+<Recommendations
+  profile={profile}
+  title={'DRAINERS'}
+  recommendationsList={profile.content.drainer.phrase}
+  icon="speech_bubble"
+/>
+```
+
 ### Do's and Dont's
 
 A styled list of the dos and dont's
+`<DosDonts profile={profile} />`
 
 ### Circumplex Graph
 
 A Crystal styled circumplex graph with all of the disc types, with the current profile's disc section highlighted. It includes an optional size property which will reflect the height and width in pixels
+`<CircumplexGraph profile={profile} size={250} />`
 
 ### Color Icon
 
-The SectionHeader and Recommendations components can receive any of the following strings for their headers:
+The `SectionHeader` and `Recommendations` components can receive any of the following strings for their icon:
 `'speech_bubble', 'close-bubble', 'checkBubble', 'disc_wheel', 'people', 'award', 'working'`
