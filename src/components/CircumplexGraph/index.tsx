@@ -10,8 +10,6 @@ const classNames = classNamesBind.bind(css)
 export type OwnProps = {
   size: number
   profile: Profile
-  selectedType: string | null
-  showDiscChart?: boolean
 }
 
 export type ProfileScore = {
@@ -20,10 +18,8 @@ export type ProfileScore = {
   intensity: number
 }
 
-const CircumplexGraph: FC<OwnProps> = ({
-  size = 450,
-  selectedType,
-}: OwnProps) => {
+const CircumplexGraph: FC<OwnProps> = ({ size = 450, profile }: OwnProps) => {
+  const selectedType = profile.personalities.disc_type
   const [hoveredType, setHoveredType] = useState<string | null>(null)
 
   const handleTypeHovered = (discType: string | null) => {

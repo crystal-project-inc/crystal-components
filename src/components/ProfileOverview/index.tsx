@@ -16,8 +16,6 @@ interface OwnProps {
 }
 
 const ProfileOverview: FC<OwnProps> = ({ profile }: OwnProps) => {
-  const { disc_type: discType, archetype } = profile.personalities
-
   return (
     <div className={classNames('container')}>
       <ProfileHeader profile={profile} />
@@ -29,14 +27,10 @@ const ProfileOverview: FC<OwnProps> = ({ profile }: OwnProps) => {
         recommendationsList={profile.content.profile.overview}
       />
       <DosDonts profile={profile} />
-      <SectionHeader icon="disc_wheel" discType={discType}>
+      <SectionHeader icon="disc_wheel" profile={profile}>
         DISC Map
       </SectionHeader>
-      <CircumplexGraph
-        profile={profile}
-        size={250}
-        selectedType={profile.personalities.disc_type}
-      />
+      <CircumplexGraph profile={profile} size={250} />
       <Recommendations
         profile={profile}
         title={'BEHAVIOR'}

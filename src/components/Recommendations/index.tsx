@@ -25,7 +25,7 @@ const Recommendations: FC<OwnProps> = ({
   const discType = profile.personalities.disc_type
   return (
     <div className={classNames('container')}>
-      <SectionHeader icon={icon || undefined} discType={discType}>
+      <SectionHeader icon={icon || undefined} profile={profile}>
         {title}
       </SectionHeader>
       <ul className={classNames('phraseContainer')}>
