@@ -1,0 +1,19 @@
+@import 'constants.scss';
+@import 'helpers.scss';
+
+.content {
+  margin: 0 16px 24px;
+}
+
+.qualities {
+  margin-bottom: 24px;
+  margin-top: 4px;
+  color: $gray-text;
+}
+
+.discTypeSubheader {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 24px;
+  @extend .disc-color;
+}

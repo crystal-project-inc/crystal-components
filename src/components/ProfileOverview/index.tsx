@@ -8,6 +8,7 @@ import css from './styles.module.scss'
 import CircumplexGraph from 'components/CircumplexGraph'
 import Recommendations from 'components/Recommendations'
 import DosDonts from 'components/DosDonts'
+import ProfileBulletPoints from 'components/ProfileBulletPoints'
 const classNames = classNamesBind.bind(css)
 
 interface OwnProps {
@@ -20,14 +21,7 @@ const ProfileOverview: FC<OwnProps> = ({ profile }: OwnProps) => {
   return (
     <div className={classNames('container')}>
       <ProfileHeader profile={profile} />
-      <div className={classNames('content')}>
-        <div
-          className={classNames('discTypeSubheader', discType)}
-        >{`${discType} (${archetype})`}</div>
-        <div className={classNames('qualities')}>
-          {profile.qualities.slice(0, 3).join(' \u0387 ')}
-        </div>
-      </div>
+      <ProfileBulletPoints profile={profile} />
       <Recommendations
         profile={profile}
         title={'HOW TO COMMUNICATE'}
